@@ -2,7 +2,7 @@
   <div>
     <h1>Types of floors</h1>
     <hr />
-    <div v-if="isLoading" class="progress">
+    <div v-if="$store.getters.types.length < 1" class="progress">
       <div class="indeterminate"></div>
     </div>
     <table v-else-if="types?.length">

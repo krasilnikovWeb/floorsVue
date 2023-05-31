@@ -9,10 +9,10 @@ export default new Vuex.Store({
   },
   mutations: {
     async loadFloors(state) {
-      state.types = [];
+      /* state.types = []; */
       let response = await fetch("https://moscow.fargospc.ru/test/json/");
       let content = await response.json();
-      state.types.push(content);
+      state.types = [content];
       localStorage.setItem("types", JSON.stringify(state.types));
     },
   },
