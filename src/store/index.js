@@ -9,7 +9,6 @@ export default new Vuex.Store({
   },
   mutations: {
     async loadFloors(state) {
-      /* state.types = []; */
       let response = await fetch("https://moscow.fargospc.ru/test/json/");
       let content = await response.json();
       state.types = [content];
