@@ -10,7 +10,6 @@
         :src="imageUrl"
       />
     </a>
-    <!-- Modal Structure -->
     <div ref="modal" :id="'modal1' + imageUrl" class="modal">
       <div class="modal-content">
         <img :src="imageUrl" />

@@ -1,8 +1,9 @@
 <template>
   <div class="v-catalog">
-    <div class="v-catalog__list">
+    <div v-if="floors.length > 0" class="v-catalog__list">
       <v-catalog-item v-for="floor in floors" :key="floor.id" :item="floor" />
     </div>
+    <p v-else>No types of floors</p>
   </div>
 </template>
 

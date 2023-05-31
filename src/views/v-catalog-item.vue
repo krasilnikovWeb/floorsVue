@@ -23,7 +23,6 @@
 import vImage from "./v-image.vue";
 export default {
   data: () => ({
-    /* modal: null, */
     vImage: null,
   }),
   props: {
@@ -36,7 +35,6 @@ export default {
     vImage,
   },
   mounted() {
-    /* this.modal = M.Modal.init(this.$refs.modal); */
     this.img = M.Materialbox.init(this.$refs.img, {
       inDuration: 100,
       outDuration: 100,
